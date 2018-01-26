@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box; }
+  * p {
+    margin: 0; }
+
+body {
+  background-color: #e6e6e6; }
+
+@font-face {
+  font-family: 'jmed';
+  src: url("./imgs/jubilat/JubilMed.otf") format("otf"); }
+header {
+  width: 100%;
+  background-color: #414959;
+  display: flex;
+  justify-content: space-around; }
+  header .contribute {
+    width: 133px;
+    height: 43px;
+    background: #e81b23;
+    text-align: center;
+    vertical-align: middle; }
+
+.question-quesion {
+  font-family: helvetica;
+  font-size: 21px; }
+
+.container .quiz-title {
+  text-align: center; }
+  .container .quiz-title h1 {
+    font-family: jmed;
+    font-size: 40px;
+    margin-top: 50px; }
+  .container .quiz-title p {
+    font-family: arial;
+    font-size: 21px;
+    margin-bottom: 40px; }
+.container .quiz-content {
+  background-color: #fbfbfb;
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px; }
+  .container .quiz-content .social-top {
+    display: flex;
+    color: white; }
+    .container .quiz-content .social-top .facebook {
+      background-color: #3a589a; }
+    .container .quiz-content .social-top .twitter {
+      background-color: #20a8e4; }
+    .container .quiz-content .social-top .social {
+      margin: 20px 0 50px;
+      width: 145px;
+      height: 35px;
+      padding: 5px; }
+  .container .quiz-content .question-images .cards {
+    display: flex;
+    justify-content: space-between; }
+    .container .quiz-content .question-images .cards .single-card {
+      border: 3px solid #c2c2c2; }
+  .container .quiz-content .question1 {
+    margin-bottom: 64px; }
+  .container .quiz-content .question2 .vacations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; }
+    .container .quiz-content .question2 .vacations .vacation-spot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      height: 90px;
+      text-align: center;
+      border-top: 10px solid #e81b23; }
+      .container .quiz-content .question2 .vacations .vacation-spot p {
+        font-family: arial;
+        font-size: 16pt; }
+  .container .quiz-content .question3 {
+    margin-bottom: 64px; }
+    .container .quiz-content .question3 .animals {
+      background-color: white;
+      height: 70px;
+      margin: 20px 0;
+      border-left: 30px solid #e81b23;
+      display: flex;
+      align-items: center; }
+      .container .quiz-content .question3 .animals p {
+        margin-left: 50px;
+        vertical-align: middle;
+        font-family: arial;
+        font-size: 16pt; }
+
+/*# sourceMappingURL=style.css.map */

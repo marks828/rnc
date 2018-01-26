@@ -1,0 +1,133 @@
+$header: #414959;
+$nav-red: #e81b23;
+$body-color: #e6e6e6;
+$border-color: #c2c2c2;
+$facebook: #3a589a;
+$twitter: #20a8e4;
+$quizcontainer: #fbfbfb;
+
+*{
+  box-sizing: border-box;
+  p{
+    margin: 0;
+  }
+}
+
+body{
+  background-color: $body-color;
+}
+
+@font-face {
+  font-family: 'jmed';
+  src: url('./imgs/jubilat/JubilMed.otf') format('otf');
+}
+
+header{
+  width:100%;
+  background-color: $header;
+  display: flex;
+  justify-content: space-around;
+  .contribute{
+    width: 133px;
+    height: 43px;
+    background: $nav-red;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .gop{
+
+  }
+
+}
+
+.question-quesion{
+  font-family: helvetica;
+  font-size: 21px;
+}
+
+.container{
+  .quiz-title{
+    text-align: center;
+    h1{
+      font-family: jmed;
+      font-size: 40px;
+      margin-top: 50px;
+    }
+    p{
+      font-family: arial;
+      font-size: 21px;
+      margin-bottom: 40px;
+    }
+  }
+  .quiz-content{
+    background-color:#fbfbfb;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    .social-top{
+      display: flex;
+      color: white;
+      .facebook{
+        background-color: $facebook;
+      }
+      .twitter{
+        background-color: $twitter;
+      }
+      .social{
+        margin: 20px 0 50px;
+        width:145px;
+        height:35px;
+        padding:5px;
+      }
+    }
+    .question-images{
+      .cards{
+        display: flex;
+        justify-content: space-between;
+        .single-card{
+          border: 3px solid $border-color;
+        }
+      }
+    } //questions
+    .question1{
+      margin-bottom: 64px;
+    }
+    .question2{
+      .vacations{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        .vacation-spot{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: white;
+          height:90px;
+          text-align: center;
+          border-top: 10px solid $nav-red;
+          p{
+            font-family: arial;
+            font-size: 16pt;
+          }
+        }
+      } //vacations
+    } //question 2
+    .question3{
+      margin-bottom: 64px;
+      .animals{
+        background-color: white;
+        height:70px;
+        margin: 20px 0;
+        border-left: 30px solid $nav-red;
+        display: flex;
+        align-items: center;
+        p{
+          margin-left: 50px;
+          vertical-align: middle;
+          font-family: arial,;
+          font-size: 16pt;
+        }
+      }
+    }
+  }
+}
